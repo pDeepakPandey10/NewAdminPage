@@ -7,7 +7,7 @@ const Login = (props) => {
 	const [password, setPassword] = useState("")
 	const navigate = useNavigate();
 	const onButtonClick = () => {
-		axios.get('http://35.154.5.140:8000/emergencyresponseapp/userRoles').then((response) => {
+		axios.get('https://35.154.5.140:8000/emergencyresponseapp/userRoles').then((response) => {
 			console.log('response ', response)
 			return response.json()
 		})
